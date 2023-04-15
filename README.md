@@ -1,6 +1,6 @@
 This sets up a 3-node docker mongodb cluster. Replace hostname1, hostname2, and hostname3 with the actual server hostnames in the docker-compose.yaml file.
 
-Run docker stack deploy -c docker-compose.yaml --with-registry-auth mongo to set up the cluster.
+Run docker stack deploy -c docker-compose-mongo.yaml --with-registry-auth mongo to set up the cluster.
 
 login to one of the mongodb container and execute below command to initiate the mongodb cluster and do rs.status() to check the cluster status
 
